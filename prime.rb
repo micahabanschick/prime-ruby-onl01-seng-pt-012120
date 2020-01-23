@@ -7,7 +7,6 @@ def prime?(num)
       return true 
     end
   end
-  
 end
 
 
