@@ -6,6 +6,8 @@ def prime?(num)
     false 
   elsif n_odds.any?{|n| num % n == 0}
     false 
+  elsif num == 1 || num == -1
+    false 
   else 
     true 
   end 
