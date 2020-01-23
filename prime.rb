@@ -1,12 +1,11 @@
 # Add  code here!
-def prime?(num)
-  (2..(num - 1)).each do |n|
-    if num % n == 0
-      return false 
-    else 
-      return true 
-    end
-  end
+def prime(num)
+  odds = (2..(num - 1)).to_a.filter{|int| int.odd}
+  if odds.any?{|n| num % n == 0}
+    false 
+  else 
+    true 
+  end 
 end
 
 
